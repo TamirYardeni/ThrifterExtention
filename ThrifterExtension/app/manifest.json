@@ -15,7 +15,9 @@
   "content_scripts": [
     {
       "matches": ["http://www.amazon.co.uk/*/dp/*", "https://www.amazon.co.uk/*/dp/*", "http://www.google.co.in/*","https://www.google.co.in/*"],
-      "js": ["product-page-script.js"]
+
+      "js": [ "jquery-3.1.1.min.js", "jquery-ui.min.js", "bootstrap.min.js", "product-page-script.js" ],
+      "css": ["bootstrap.min.css.map"]
     },
 	{
       "matches": ["https://www.amazon.co.uk/gp/cart/*", "http://www.amazon.co.uk/gp/cart/*"],
