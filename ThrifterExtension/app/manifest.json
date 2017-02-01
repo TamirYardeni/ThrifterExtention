@@ -16,7 +16,7 @@
     {
       "matches": ["http://www.amazon.co.uk/*/dp/*", "https://www.amazon.co.uk/*/dp/*", "http://www.google.co.in/*","https://www.google.co.in/*"],
       "js": [ "jquery-3.1.1.min.js", "jquery-ui.min.js", "bootstrap.min.js", "product-page-script.js" ],
-      "css": ["bootstrap.min.css.map"]
+      "css": ["bootstrap.min.css"]
     }
   ]
 }
