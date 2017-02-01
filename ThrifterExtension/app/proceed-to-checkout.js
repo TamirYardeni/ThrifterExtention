@@ -16,19 +16,22 @@ if (document.title.indexOf("Amazon") != -1) {
                     items.push(cartItem);
                 }
             }
-            debugger;
+
             var dataToSend = {
                 "Email": "tamir.yardeni1@gmail.com",
-                "Product": items
+                "Products": items
             };
 
             jQuery.ajax({
                 type: "POST",
                 url: "https://thrifter.azurewebsites.net/api/ProductOwnerships",
-                data: items,
+                data: dataToSend,
                 dataType: "json",
                 success: function (data) {
                     console.log(data);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("Status: " + textStatus); alert("Error: " + errorThrown);
                 }
             });
 
