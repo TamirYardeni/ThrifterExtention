@@ -16,6 +16,11 @@
     {
       "matches": ["http://www.amazon.co.uk/*/dp/*", "https://www.amazon.co.uk/*/dp/*", "http://www.google.co.in/*","https://www.google.co.in/*"],
       "js": ["product-page-script.js"]
+    },
+	{
+      "matches": ["https://www.amazon.co.uk/gp/cart/*", "http://www.amazon.co.uk/gp/cart/*"],
+      "js": ["proceed-to-checkout.js"]
     }
+
   ]
 }
